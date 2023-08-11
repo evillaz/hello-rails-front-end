@@ -8,7 +8,6 @@ export const fetchGreeting = createAsyncThunk(
       const response = await axios.get(
         'http://localhost:3000/api/random_greeting',
       );
-      console.log(response.data);
       return response.data.greeting;
     } catch (error) {
       return error.message;
