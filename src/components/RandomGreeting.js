@@ -15,7 +15,7 @@ function RandomGreeting() {
   return (
     <div>
       <h1>Random Greeting</h1>
-      {isLoading == false && 
+      {isLoading === false && 
         <p>{greeting}</p> 
       }
     </div>
