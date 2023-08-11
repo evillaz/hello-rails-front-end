@@ -33,12 +33,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<summary>Ruby on Rails</summary>
-  <ul>
-    <li><a href="https://guides.rubyonrails.org">Ruby on Rails</a></li>
-  </ul>
-</details>
-
 <summary>React</summary>
   <ul>
     <li><a href="https://react.dev/">React Js</a></li>
