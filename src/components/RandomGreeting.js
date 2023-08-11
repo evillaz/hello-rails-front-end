@@ -1,19 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchGreeting } from '../redux/Greetings/GreetingsSlice';
 
 function RandomGreeting() {
-  const [greeting, setGreeting] = useState('');
 
+  const dispatch = useDispatch();
   useEffect(() => {
-    fetch('http://localhost:3000/api/random_greeting') // Replace with your API URL
-      .then(response => response.json())
-      .then(data => setGreeting(data.greeting))
-      .catch(error => console.error('Error fetching greeting:', error));
-  }, []);
+    dispatch(fetchGreeting());
+  }, [dispatch]);
+
+  const {greeting, isLoading}  = useSelector((store) => store.greetings);
+
 
   return (
     <div>
       <h1>Random Greeting</h1>
-      <p>{greeting}</p>
+      {isLoading == false && 
+        <p>{greeting}</p> 
+      }
     </div>
   );
 }
