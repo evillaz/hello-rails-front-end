@@ -25,20 +25,13 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello_Rails_React_App] <a name="about-project"></a>
+# 📖 [Hello_Rails_Front_End] <a name="about-project"></a>
 
-**[Hello_Rails_React_App]** Implement a connection between a Ruby on Rails back-end and React front-end.
-Understand the pros and cons of different approaches of connecting Ruby on Rails back-end with React front-end.
+**[Hello_Rails_Front_End]** Implement a react front-end design to consume rails back-end API endpoint to display random messages from the database
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-<summary>Ruby on Rails</summary>
-  <ul>
-    <li><a href="https://guides.rubyonrails.org">Ruby on Rails</a></li>
-  </ul>
-</details>
 
 <summary>React</summary>
   <ul>
@@ -84,7 +77,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/evillaz/hello-rails-react
+  git clone https://github.com/evillaz/hello-rails-front-end
 ```
 
 ### Install
@@ -95,23 +88,14 @@ Example command:
 
 
 ```sh
-  bundle install
   npm install
 ```
 
 ### Usage
 
 To running the server:
-  npm run build
-  rails s
-
-To run the back end run this command in the terminal
-
 ```sh
-  rails c
-  rails db:create
-  rails db:migrate
-  rails db:seed
+  npm start
 ```
 
 ### Deployment
